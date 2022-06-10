@@ -4,6 +4,7 @@ public class EmpWageComputation {
         int check = (int) (Math.floor(Math.random() * 10) % 3+1);
         int isFullTime = 2;
         int isPartTime = 1;
+        int totalWorkDaysAMonth = 20;
         int workHour = 0;
         switch (check) {
             case 2:
@@ -17,7 +18,7 @@ public class EmpWageComputation {
             default:
                 System.out.println("Employee is absent.");
         }
-        int empWage = empWagePerHr * workHour;
+        int empWage = empWagePerHr * workHour *totalWorkDaysAMonth;
         System.out.println("daily wage is: " + empWage);
     }
 }
