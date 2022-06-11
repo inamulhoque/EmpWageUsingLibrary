@@ -1,11 +1,7 @@
-public class EmpWageComputation {
-    static int empWagePerHr = 20;
-    public static void main(String[] args) {
-        int isFullTime = 2;
-        int isPartTime = 1;
-        int workHour = 0;
+public class EmpWageComputation implements IEmpWageComputation{
+    public void empWage() {
         int days = 1;
-        int hours = 1;
+        int workHour = 0;
         int totalWorkHr = 0;
         int empWage = 0;
         while (days < 20 && totalWorkHr < 100) {
